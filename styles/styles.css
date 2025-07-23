@@ -36,6 +36,37 @@ nav a{
 #cart-link {
     color: black;
 }
+/* banner styles */
+.full-banner{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 120px;
+}
+.banner-left{
+    
+}
+.banner-left h2{
+    color: black;
+    font-size: 65px;
+    font-weight: 700;
+    font-family: "Noto Serif", serif;
+}
+span{
+      font-family: "Noto Serif", serif;
+}
+.banner-left p{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-top: 13px;
+}
+.full-banner img{
+    max-width: 100%;
+    border: ;
+}
 
 
 /* responsive styles */
@@ -53,8 +84,23 @@ nav a{
     nav ul li:not(:last-child) {
         display: none;
     }
-    img {
+    .navbar img {
         max-width: 63px;
         height: auto;
+    }
+    /* banner section */
+    .full-banner{
+        flex-direction: column-reverse;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .banner-left{
+        margin-top: 28px;
+    }
+    .banner-left h2{
+        font-size: 24px;
+    }
+    .banner-left p{
+        font-size: 14px;
     }
 }
