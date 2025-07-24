@@ -4,11 +4,14 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
-    background-color: ;
+    background-color: rgb(245, 248, 255);;
 }
 .container{
     max-width: 1280px;
     margin: auto;
+}
+h3{
+    font-family: "Noto Serif", serif;
 }
 /* navbar */
 .navbar{
@@ -86,7 +89,7 @@ span{
     align-items: center;
 }
 .headlines h3{
-    font-size: 50px;
+    font-size: 55px;
     font-weight: 700;
     font-family: "Noto Serif", serif;
 }
@@ -134,6 +137,82 @@ span{
     margin-bottom: 30px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.10);
 }
+
+/* Plants Lover Styles */
+.plants-lover{
+    margin-top: 210px;
+}
+.plants-lover-left{
+
+    /* position: relative; */
+}
+.badge-img{
+    width: 60px;
+    height: 60px;
+    position: relative;
+}
+.badge-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 500px;
+    top: -650px;
+    background: transparent;
+
+}
+.plants-lover-left img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* box-shadow: 0 4px 8px rgba(0,0,0,0.10); */
+    
+}
+.whole-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.plants-lover-right{
+    flex: 1;
+    /* padding: 38px ; */
+    border: 0 0 0 2px solid black;
+    width: 100%;
+}
+.plants-lover-right h3{
+    font-family: "Noto Serif", serif;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 68px;
+    /* text-align: left; */
+    padding: 0px;
+    margin-bottom: 20px;
+}
+.plants-lover-right ul{
+    font-size: 22px;
+    font-weight: 400;
+    
+    padding-left: 20px;
+    /* text-align: left; */
+    list-style-position: inside;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+.plants-lover-right li{
+    margin-bottom: 20px;
+    line-height: 27px;
+}
+
+/* latest deal styles */
+.latest-pics{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
 /* responsive styles */
 @media screen and (max-width: 576px) {
     .navbar {
@@ -174,5 +253,31 @@ span{
     grid-template-columns: repeat(2,1fr);
             margin-left: 16px;
         margin-right: 16px;
+    }
+
+    /* plants lover responsive */
+    .whole-section{
+        flex-direction: column;
+    }
+    .plants-lover-right{
+        margin-top: -42px;
+    }
+    .plants-lover-right h3{
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .plants-lover-right br{
+        display: none;
+    }
+    .plants-lover-right ul{
+        font-size: 16px;
+    }
+    .plants-lover-right li{
+        margin-bottom: 10px;
+    }
+    .plants-lover{
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 42px;
     }
 }
