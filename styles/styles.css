@@ -72,7 +72,6 @@ span{
 }
 .full-banner img{
     max-width: 100%;
-    border: ;
 }
 /* plants styles */
 .plants-chart{
@@ -95,6 +94,7 @@ span{
     font-size: 55px;
     font-weight: 700;
     font-family: "Noto Serif", serif;
+    margin-bottom: 16px;
 }
 .headlines p{
     font-weight: 400;
@@ -154,7 +154,7 @@ span{
     height: auto;
     object-fit: cover; */
     width: 100%;
-    box-shadow: -4px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .badge{
     background-color: transparent;
@@ -357,6 +357,15 @@ margin: 0;
     grid-template-columns: repeat(2,1fr);
             margin-left: 16px;
         margin-right: 16px;
+    }
+    .headlines h3{
+        font-size: 24px;
+    }
+    .headlines p{
+        font-size: 14px;
+    }
+    .flower-name, .price-tag{
+        font-size: 16px;
     }
 
     /* plants lover responsive */
