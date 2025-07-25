@@ -7,7 +7,7 @@
     /* background-color: rgb(245, 248, 255); */
 }
 body{
-    background-color: rgb(225, 232, 249);
+    background-color: rgb(243, 246, 255);
 }
 .container{
     max-width: 1280px;
@@ -216,7 +216,6 @@ span{
      background: 
         linear-gradient(rgba(7, 51, 79, 0.4), rgba(7, 51, 79, 0.4)),
         url('news-letter-bg.png');
-            background-size: contain;
     background-repeat: no-repeat;
 }
 .join-headline{
@@ -245,9 +244,9 @@ span{
     padding-block: 20px;
     padding-left: 20px;
     font-size: 16px;
-font-weight: 400;
-border: none;
-margin: 0;
+    font-weight: 400;
+    border: none;
+    margin: 0;
 }
 
 .subscription button {
@@ -260,6 +259,61 @@ background-color: rgb(233, 90, 8);
 color: white;
 border: none;
 margin: 0;
+}
+/* footer styles */
+    .whole-footer {
+    display: flex;
+    padding: 50px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+.left-footer{
+    flex: 1;
+    align-items: flex-start;
+}
+.left-footer p{
+    color: #8987A1;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 16px;
+}
+.center-footer{
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px 100px;
+}
+.footer-links li{
+    margin: 5px 0 ;
+}
+.footer-links a{
+    text-decoration: none;
+    color: rgb(107, 114, 128);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.right-footer{
+    flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  
+  justify-content: right;
+
+
+
+}
+.right-footer img{
+    width: 36px;
+    height: 36px;
 }
 
 
@@ -370,5 +424,28 @@ margin: 0;
     }
     .subscription button{
         width: 100px;
+    }
+
+    /* footer responsive */
+    .whole-footer{
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+        width: fit-content;
+    }
+    .left-footer p{
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 20px;
+    }
+    .center-footer{
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .footer-links{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .right-footer{
+        justify-content: flex-start;
     }
 }
