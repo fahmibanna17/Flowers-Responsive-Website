@@ -10,7 +10,7 @@ body{
     background-color: rgb(243, 246, 255);
 }
 .container{
-    max-width: 1280px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 h3{
@@ -52,7 +52,7 @@ nav a{
     margin-top: 120px;
 }
 .banner-left{
-    
+    /* border: 2px solid black; */
 }
 .banner-left h2{
     color: black;
@@ -201,6 +201,114 @@ span{
 }
 
 /* latest deal styles */
+.latest-deals{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.latest-text h3{
+    font-size: 55px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.latest-text span{
+    color: #E95A08;
+}
+.latest-text p{
+    font-size: 22px;
+    color: #8987A1;
+    width: 888px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 120px;
+}
+.latest-pic{
+    display: flex;
+    justify-content: space-between;
+    height: 422px;
+    width: auto;
+}
+.left-side{
+    width: 34%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left-side h3{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    background-color: transparent;
+    color: white;
+    z-index: 2;
+    font-size: 20px;
+    font-weight: 700;
+}
+.left-side a{
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    top: 55%;
+    left: 40%;
+    z-index: 2;
+    font-size: 16px;
+    font-weight: 600;
+}
+.left-first{
+    background-image: url("../assets/deal-bloom.png");
+    border-radius: 12px;
+    background-size: cover;
+    height: 47%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    border-radius: 12px;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+.left-second{
+    background-image: url("../assets/deal-ana.png");
+    border-radius: 12px;
+    background-size: cover;
+    position: relative;
+    height: 47%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.right-side{
+    background-image: url("../assets/deal-zabo.png");
+    border-radius: 12px;
+    width: 64%;
+    position: relative;
+}
+.right-side h3{
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    font-size: 32px;
+    font-weight: 700;
+    top: 40%;
+    left: 28%;
+}
+.right-side a{
+    background-color: transparent;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    font-size: 25px;
+    top: 55%;
+    left: 40%;
+    font-weight: 600;
+}
+
+
 
 /* Join Styles */
 .join{
@@ -341,6 +449,7 @@ margin: 0;
         flex-direction: column-reverse;
         margin-left: 16px;
         margin-right: 16px;
+        margin-top: 28px;
     }
     .banner-left{
         margin-top: 28px;
@@ -351,12 +460,19 @@ margin: 0;
     .banner-left p{
         font-size: 14px;
     }
+
     /* plants responsive  */
+    .plants-chart{
+        margin-top: 65px;
+    }
     .plant-cards{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-            margin-left: 16px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 16px;
         margin-right: 16px;
+    }
+    .headlines{
+        margin-bottom: 28px;
     }
     .headlines h3{
         font-size: 24px;
@@ -383,7 +499,8 @@ margin: 0;
         display: none;
     }
     .plants-lover-right ul{
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 17px;
     }
     .plants-lover-right li{
         margin-bottom: 10px;
@@ -396,6 +513,59 @@ margin: 0;
     .badge{
         display: none;
     }
+
+    /* latest deal responsive */
+    .latest-deals{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    
+    .latest-text h3{
+        font-size: 24px;
+    }
+    .latest-text p{
+        width: fit-content;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+    .latest-pic{
+        flex-direction: column;
+        height: auto;
+    }
+    .latest-pic h3{
+        font-size: 20px;
+    }
+    .latest-pic a{
+        font-size: 16px;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .mob-overlay{
+        border-radius: 0px;
+    }
+    .right-side{
+        width: 100%;
+        height: 200px;
+    }
+    .left-first{
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .left-second{
+        height: 200px;
+        border-radius: 0px;
+        margin-bottom: 20px;
+    }
+    .left-first, .left-second, .right-side{
+        background-size: cover;
+        background-position: center;
+    }
+    
+
+
+
     /* join section responsive */
      .join {
         height: 275px;
@@ -406,6 +576,7 @@ margin: 0;
         align-items: center;
         padding: 0 16px;
         background-size: cover;
+        margin-top: 40px;
     }
     .join-headline {
         width: 100%;
@@ -428,7 +599,7 @@ margin: 0;
         width: 100%;
         margin-top: 12px;
     }
-        .subscription input{
+    .subscription input{
         width: 220px;
     }
     .subscription button{
